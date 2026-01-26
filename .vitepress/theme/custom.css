@@ -38,6 +38,14 @@
   font-size: 12px;
 }
 
+
+.method.method {
+  background: var(--vp-c-brand-3);
+  opacity: 10;
+  color:#fff;
+  font-size: 12px;
+}
+
 .method.post {
  background: var(--vp-c-brand-3);
   color:#fff;
@@ -108,8 +116,6 @@ details[open] .arrow {
   width: 1px;
   height: 1px;
   padding: 0;
+  margin: 0 !important;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
 }

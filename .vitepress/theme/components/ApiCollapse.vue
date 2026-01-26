@@ -21,7 +21,7 @@
 <script setup lang="ts">
 const props = defineProps<{ method?: string;  }>()
 
-const method = props.method || 'GET'
+const method = props.method || 'METHOD'
 
 // dynamic class for styling GET, POST, etc.
 const methodClass = `method ${method.toLowerCase()}`
