@@ -6,7 +6,7 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },
-      { text: "Getting Started", link: "/getting-started/getting-started" },
+      { text: "Getting Started", link: "/getting-started/introduction" },
       { text: "Development", link: "/development/architecture" },
       { text: "Community", link: "https://community.berryaudio.org" },
     ],
@@ -14,7 +14,6 @@ export default defineConfig({
     sidebar: [
       {
         text: "Getting started",
-        link: "/getting-started/getting-started/",
         items: [
           { text: "Introduction", link: "/getting-started/introduction" },
           { text: "Installation & Setup", link: "/getting-started/installation" },

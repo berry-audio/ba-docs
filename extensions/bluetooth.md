@@ -1,15 +1,12 @@
----
-outline: deep
----
-
 # Bluetooth
 
 The built-in Bluetooth extension enables high-quality audio streaming and device management for supported devices. It supports aptX, LDAC, and SBC XQ+ codecs, with metadata display when available. The extension can function as a Bluetooth receiver or transmitter, automatically switching based on the connected device, and Bluetooth devices can be scanned, connected, and managed via D-Bus.
 
-> [!Note]
+>> [!WARNING]
 > The Raspberry Pi may experience occasional random disconnects or connection issues when switching between devices. Once a connection is successfully established, streaming and metadata functionality should work reliably.
 
-https://github.com/berry-audio/berryaudio/tree/master/bluetooth
+[https://github.com/berry-audio/berryaudio/tree/master/bluetooth](https://github.com/berry-audio/berryaudio/tree/master/bluetooth)
+
 
 ## Methods
 

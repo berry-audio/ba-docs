@@ -8,18 +8,20 @@ hero:
   tagline: An open-source, audiophile client–server audio streaming platform for Raspberry Pi
   actions:
     - theme: brand
-      text: Latest Release v2.0.0
-      link: /markdown-examples
-    - theme: alt
-      text: Development
-      link: /api-examples
-
+      text: Latest Release Image
+      link: http://berryaudio.org/berryaudio_latest.img.zip
+    
 features:
-  - title: Playback
-    details: Supports MP3, M4A, MP4, AAC, FLAC, OGG, OPUS, WMA, WAV and DSF (Supported DAC only) audio formats.
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Getting Started
+    details: Learn about BerryAudio, supported hardware, and how to get started with installation and exploring features.
+    link: /getting-started/introduction
+  - title: Development
+    details: Learn about platform’s architecture, explore the built-in extensions, and learn how to create your own custom extensions.
+    link: /development/architecture
+  - title: Community
+    details: Join the community, share ideas, get support, and collaborate with audio enthusiasts. Stay connected and more.
+    link: https://community.berryaudio.org
+
+    
 ---
 

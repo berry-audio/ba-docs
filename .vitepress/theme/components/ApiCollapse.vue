@@ -6,7 +6,7 @@
       </svg>
 
      
-       <span :class="methodClass">{{ method }}</span>
+        <!-- <span :class="methodClass">{{ method }}</span> -->
       <slot name="title" />
     </summary>
 
