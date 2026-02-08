@@ -1,7 +1,8 @@
 ---
-outline: deep
+aside: false
 ---
 
 # Architecture
 
-In Progress
+<br>
+<img src="/images/architecture.svg" class="full-width-img" />

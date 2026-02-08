@@ -25,6 +25,7 @@ export default defineConfig({
         text: "Development",
         items: [
           { text: "Architecture", link: "/development/architecture" },
+          { text: "Environment", link: "/development/environment" },
           { text: "Extensions", link: "/development/extensions" },
         ],
       },
@@ -33,12 +34,12 @@ export default defineConfig({
         text: "Extensions",
         items: [
           { text: "Bluetooth", link: "/extensions/bluetooth" },
+          { text: "Mixer", link: "/extensions/mixer" },
           { text: "Playback", link: "/extensions/playback" },
           { text: "System", link: "/extensions/system" },
           { text: "Spotify", link: "/extensions/spotify" },
           { text: "Airplay", link: "/extensions/airplay" },
           { text: "Snapcast", link: "/extensions/snapcast" },
-          { text: "Mixer", link: "/extensions/mixer" },
           { text: "Radio", link: "/extensions/radio" },
           { text: "Network", link: "/extensions/network" },
           { text: "Tracklist", link: "/extensions/tracklist" },

@@ -126,3 +126,9 @@ details[open] .arrow {
   margin-top: 5px;
 
 }
+
+.full-width-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
