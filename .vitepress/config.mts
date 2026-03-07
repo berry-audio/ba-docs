@@ -29,6 +29,15 @@ export default defineConfig({
           { text: "Extensions", link: "/development/extensions" },
         ],
       },
+      {
+        text: "Display",
+        items: [
+          { text: "Generic HDMI", link: "/display/generic-hdmi" },
+          { text: "SSD1322 OLED (256×64)", link: "/display/ssd1322-oled" },
+          { text: "SSD1306 OLED (128×64)", link: "/display/ssd1306-oled" },
+          { text: 'Waveshare 2.8" DSI LCD (480×640)', link: "/display/waveshare-28-dsi-lcd" },
+        ],
+      },
 
       {
         text: "Extensions",

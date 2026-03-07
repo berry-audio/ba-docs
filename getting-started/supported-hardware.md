@@ -60,11 +60,10 @@ Berryaudio has been tested on the following Raspberry Pi (Bookworm OS). While it
         <td>Raspberry Pi 5</td>
         <td>CPU: Quad‑core Cortex‑A76 Memory: 1/2/4/8/16 GB Wi‑Fi: 802.11ac Bluetooth: 5/BLE</td>
         <td><a href="https://www.raspberrypi.com/products/raspberry-pi-5/">Link</a></td>
-        <td>-</td>
+        <td>Tested</td>
     </tr>
     </tbody>
 </table>
-
 
 ## Audio Boards
 
@@ -120,6 +119,53 @@ Below are the list of DACs that have been tested and are confirmed to work out o
         <td>Hardware</td>
         <td>384kHz</td>
         <td><a href="https://www.hifiberry.com/shop/boards/dacplus-adc/">Link</a></td>
+        <td>Tested</td>
+    </tr>
+    </tbody>
+</table>
+
+## Displays
+
+Below are the list of Displays that have been tested and are confirmed to work out of the box. More will be added as testing progresses. If you have a Display you’d like to see supported, or are able to provide a board for testing, we’d be happy to include it on the platform—your contributions are always welcome!
+
+<table>
+    <thead>
+        <tr>
+        <th width="30%">Display Name</th>
+        <th width="20%">Resolution</th>
+        <th width="10%">Type</th>
+        <th width="10%">Protocol</th>
+        <th width="10%">Setup</th>
+        <th width="5%">Link</th>
+        <th width="5%">Status</th>
+        </tr>
+    </thead>
+    <tbody>
+     <tr>
+        <td>SSD1322</td>
+        <td>256x64</td>
+        <td>OLED</td>
+        <td>SPI</td>
+        <td><a href="/display/ssd1322-oled.html">Setup</a></td>
+        <td><a href="https://www.amazon.de/Gvvsjgdbis-Display-SSD1322-Parallel-Lötstift/dp/B0DSZCTGF9/">Link</a></td>
+        <td>Tested</td>
+    </tr>
+    <tr>
+        <td>SSD1306</td>
+        <td>128x64</td>
+        <td>OLED</td>
+        <td>I2C</td>
+        <td><a href="/display/ssd1306-oled.html">Setup</a></td>
+        <td><a href="https://www.amazon.de/-/en/AZDelivery-OLED-Parent-Pixel-Inches/dp/B01L9GC470/">Link</a></td>
+        <td>Tested</td>
+    </tr>
+    <tr>
+        <td>Waveshare 2.8" DSI LCD</td>
+        <td>640x480</td>
+        <td>LCD</td>
+        <td>DSI</td>
+        <td><a href="/display/waveshare-28-dsi-lcd.html">Setup</a></td>
+        <td><a href="https://www.waveshare.com/2.8inch-dsi-lcd.htm">Link</a></td>
         <td>Tested</td>
     </tr>
     </tbody>

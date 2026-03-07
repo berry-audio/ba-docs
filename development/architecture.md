@@ -5,4 +5,4 @@ aside: false
 # Architecture
 
 <br>
-<img src="/images/architecture.svg" class="full-width-img" />
+<img src="/images/architecture.png" class="full-width-img" />
