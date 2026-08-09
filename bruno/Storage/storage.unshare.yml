@@ -1,0 +1,26 @@
+info:
+  name: storage.unshare
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{baseURL}}"
+  body:
+    type: json
+    data: |-
+      {
+        "jsonrpc": "2.0",
+        "method": "storage.unshare",
+        "params":{
+           "uri": "storage:/media/pi/VARUNS 256G/Unsorted Media/1000 Top Hits 80's"
+        },
+        "id": 5
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

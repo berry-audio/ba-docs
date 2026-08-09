@@ -1,0 +1,26 @@
+info:
+  name: network.connection
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{baseURL}}"
+  body:
+    type: json
+    data: |-
+      {
+        "jsonrpc": "2.0",
+        "method": "network.connection",
+        "params" :{
+          "name": "Home-Media-Network"
+        },
+        "id": 3
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

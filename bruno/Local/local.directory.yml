@@ -1,0 +1,28 @@
+info:
+  name: local.directory
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseURL}}"
+  body:
+    type: json
+    data: |-
+      {
+        "jsonrpc": "2.0",
+        "method": "local.directory",
+        "params": {
+          "uri": "local:artist:1:tracks",
+          "limit": 1,
+          "offset": 0
+        },
+        "id": 5
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -74,7 +74,14 @@ class MyextensionExtension(Actor):
 
 ## JSON RPC Request
 
-```python
+### Request url
+```text 
+http://berryaudio.local:8080/rpc
+```
+
+
+### Request Body example
+```json
 {
   "jsonrpc": "2.0",
   "method": "myextension.function_name",

@@ -1,0 +1,25 @@
+info:
+  name: bluetooth.device
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{baseURL}}"
+  body:
+    type: json
+    data: |-
+      {
+          "jsonrpc": "2.0",
+          "method": "bluetooth.device",
+          "params": {
+           },
+          "id": 3
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

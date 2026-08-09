@@ -1,0 +1,24 @@
+info:
+  name: bluetooth.player.stop
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{baseURL}}/mopidy/bluetooth/rpc/"
+  body:
+    type: json
+    data: |-
+      {
+        "jsonrpc": "2.0",
+        "method": "bluetooth.player.stop",
+        "params": ["/org/bluez/hci0/dev_8C_85_90_C9_1D_18"],
+        "id": 3
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

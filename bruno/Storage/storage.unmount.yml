@@ -1,0 +1,26 @@
+info:
+  name: storage.unmount
+  type: http
+  seq: 10
+
+http:
+  method: GET
+  url: "{{baseURL}}"
+  body:
+    type: json
+    data: |-
+      {
+        "jsonrpc": "2.0",
+        "method": "storage.unmount",
+        "params":{
+          "dev": "/dev/sda1"
+        },
+        "id": 5
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

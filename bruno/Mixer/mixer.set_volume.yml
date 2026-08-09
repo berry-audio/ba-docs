@@ -1,0 +1,88 @@
+info:
+  name: mixer.set_volume
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseURL}}"
+  params:
+    - name: ""
+      value: ""
+      type: query
+  body:
+    type: json
+    data: |-
+      {
+        "jsonrpc": "2.0",
+        "method": "mixer.set_volume",
+        "params": {
+          "volume": 55
+        },
+        "id": 5
+      }
+  auth: inherit
+
+runtime:
+  variables:
+    - name: volume
+      value: 0-100
+  actions:
+    - type: set-variable
+      phase: after-response
+      selector:
+        expression: "100"
+        method: jsonq
+      variable:
+        name: result
+        scope: runtime
+      disabled: true
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: example
+    request:
+      url: "{{baseURL}}"
+      method: POST
+      params:
+        - name: ""
+          value: ""
+          type: query
+      body:
+        type: json
+        data: |-
+          {
+            "jsonrpc": "2.0",
+            "method": "mixer.set_volume",
+            "params": {
+              "volume": 45
+            },
+            "id": 5
+          }
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: content-type
+          value: application/json; charset=utf-8
+        - name: content-length
+          value: "41"
+        - name: date
+          value: Sun, 09 Aug 2026 14:03:04 GMT
+        - name: server
+          value: Python/3.11 aiohttp/3.13.5
+      body:
+        type: json
+        data: |-
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "result": 45
+          }
+
+docs: Sets the mixer volume to the value

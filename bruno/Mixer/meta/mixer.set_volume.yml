@@ -1,0 +1,23 @@
+request:
+  parameters:
+    - name: volume
+      type: integer
+      required: true
+      value: 0-100
+      description: Volume level from 0 to 100
+      values:
+        - value: 20-100
+          description: Second mixer channel  
+
+    - name: mixy
+      type: integer
+      required: true
+      value: 0-100
+      description: Volume level from 0 to 100
+
+response:
+  parameters:
+    - name: result
+      type: integer
+      value: 0-100
+      description: The resulting volume

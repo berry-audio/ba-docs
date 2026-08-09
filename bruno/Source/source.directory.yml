@@ -1,0 +1,242 @@
+info:
+  name: source.directory
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseURL}}"
+  body:
+    type: json
+    data: |-
+      {
+        "jsonrpc": "2.0",
+        "method": "source.directory",
+        "id": 3
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: example
+    request:
+      url: "{{baseURL}}"
+      method: POST
+      body:
+        type: json
+        data: |-
+          {
+            "jsonrpc": "2.0",
+            "method": "source.directory",
+            "id": 3
+          }
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: content-type
+          value: application/json; charset=utf-8
+        - name: content-length
+          value: "2453"
+        - name: date
+          value: Sun, 09 Aug 2026 17:14:32 GMT
+        - name: server
+          value: Python/3.11 aiohttp/3.13.5
+      body:
+        type: json
+        data: |-
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "result": [
+              {
+                "__model__": "Source",
+                "name": "Radio",
+                "uri": "radio",
+                "active": false,
+                "controls": [
+                  "seek",
+                  "play",
+                  "pause",
+                  "next",
+                  "previous",
+                  "repeat",
+                  "shuffle",
+                  "favourite"
+                ],
+                "state": {
+                  "connected": false,
+                  "user_name": null,
+                  "connection_id": null,
+                  "name": null,
+                  "icon": null,
+                  "address": null
+                }
+              },
+              {
+                "__model__": "Source",
+                "name": "Spotify Connect",
+                "uri": "spotify",
+                "active": false,
+                "controls": [],
+                "state": {
+                  "connected": false,
+                  "user_name": null,
+                  "connection_id": null,
+                  "name": null,
+                  "icon": null,
+                  "address": null
+                }
+              },
+              {
+                "__model__": "Source",
+                "name": "Airplay",
+                "uri": "shairportsync",
+                "active": true,
+                "controls": [],
+                "state": {
+                  "connected": false,
+                  "user_name": null,
+                  "connection_id": null,
+                  "name": null,
+                  "icon": null,
+                  "address": null
+                }
+              },
+              {
+                "__model__": "Source",
+                "name": "Bluetooth",
+                "uri": "bluetooth",
+                "active": false,
+                "controls": [],
+                "state": {
+                  "connected": false,
+                  "user_name": null,
+                  "connection_id": null,
+                  "name": null,
+                  "icon": null,
+                  "address": null
+                }
+              },
+              {
+                "__model__": "Source",
+                "name": "Library",
+                "uri": "local",
+                "active": false,
+                "controls": [
+                  "seek",
+                  "play",
+                  "pause",
+                  "next",
+                  "previous",
+                  "repeat",
+                  "shuffle",
+                  "favourite"
+                ],
+                "state": {
+                  "connected": false,
+                  "user_name": null,
+                  "connection_id": null,
+                  "name": null,
+                  "icon": null,
+                  "address": null
+                }
+              },
+              {
+                "__model__": "Source",
+                "name": "Storage",
+                "uri": "storage",
+                "active": false,
+                "controls": [
+                  "seek",
+                  "play",
+                  "pause",
+                  "next",
+                  "previous",
+                  "repeat",
+                  "shuffle",
+                  "favourite"
+                ],
+                "state": {
+                  "connected": false,
+                  "user_name": null,
+                  "connection_id": null,
+                  "name": null,
+                  "icon": null,
+                  "address": null
+                }
+              },
+              {
+                "__model__": "Source",
+                "name": "Multiroom",
+                "uri": "multiroom",
+                "active": false,
+                "controls": [],
+                "state": {
+                  "connected": false,
+                  "user_name": null,
+                  "connection_id": null,
+                  "name": null,
+                  "icon": "speaker",
+                  "address": null
+                }
+              },
+              {
+                "__model__": "Source",
+                "name": "Tuner",
+                "uri": "tuner",
+                "active": false,
+                "controls": [
+                  "next",
+                  "previous",
+                  "repeat",
+                  "shuffle"
+                ],
+                "state": {
+                  "connected": false,
+                  "user_name": null,
+                  "connection_id": null,
+                  "name": null,
+                  "icon": null,
+                  "address": null
+                }
+              },
+              {
+                "__model__": "Source",
+                "name": "Line In",
+                "uri": "linein",
+                "active": false,
+                "controls": [],
+                "state": {
+                  "connected": false,
+                  "user_name": null,
+                  "connection_id": null,
+                  "name": null,
+                  "icon": null,
+                  "address": null
+                }
+              },
+              {
+                "__model__": "Source",
+                "name": "USB DAC",
+                "uri": "usbdac",
+                "active": false,
+                "controls": [],
+                "state": {
+                  "connected": false,
+                  "user_name": null,
+                  "connection_id": null,
+                  "name": null,
+                  "icon": null,
+                  "address": null
+                }
+              }
+            ]
+          }
+
+docs: Fetches all available sources, along with their controls and current states.

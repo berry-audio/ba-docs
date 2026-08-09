@@ -1,0 +1,26 @@
+info:
+  name: bluetooth.trust
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{baseURL}}"
+  body:
+    type: json
+    data: |-
+      {
+        "jsonrpc": "2.0",
+        "method": "bluetooth.trust",
+         "params": {
+              "address": "14:4E:FD:88:AE:B1"
+          },
+        "id": 3
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

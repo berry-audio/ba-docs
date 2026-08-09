@@ -1,15 +1,15 @@
 :root {
   /* Primary brand color */
-  --vp-c-brand-1: #87602a; /* main */
-  --vp-c-brand-2: #6a4b20; /* hover */
-  --vp-c-brand-3: #87602a; /* soft */
+  --vp-c-brand-1: #db462b; /* main */
+  --vp-c-brand-2: #b83a24; /* hover */
+  --vp-c-brand-3: #db462b; /* soft */
 }
 
 /* Optional: dark mode tweaks */
 .dark {
-  --vp-c-brand-1: #87602a;
-  --vp-c-brand-2: #87602a;
-  --vp-c-brand-3: #87602a;
+  --vp-c-brand-1: #db462b;
+  --vp-c-brand-2: #db462b;
+  --vp-c-brand-3: #db462b;
 }
 
 .vp-doc .info strong {
@@ -131,4 +131,14 @@ details[open] .arrow {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.vp-doc table {
+  width: 100%;
+  display: table;
+}
+
+.vp-doc th,
+.vp-doc td {
+  padding: 8px 12px;
 }

@@ -1,0 +1,65 @@
+info:
+  name: source.set_state
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseURL}}"
+  body:
+    type: json
+    data: |-
+      {
+        "jsonrpc": "2.0",
+        "method": "source.set",
+        "params": {
+          "uri": "shairportsync"
+        },
+        "id": 3
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: example
+    request:
+      url: "{{baseURL}}"
+      method: POST
+      body:
+        type: json
+        data: |-
+          {
+            "jsonrpc": "2.0",
+            "method": "source.set",
+            "params": {
+              "uri": "shairportsync"
+            },
+            "id": 3
+          }
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: content-type
+          value: application/json; charset=utf-8
+        - name: content-length
+          value: "43"
+        - name: date
+          value: Sun, 09 Aug 2026 17:12:01 GMT
+        - name: server
+          value: Python/3.11 aiohttp/3.13.5
+      body:
+        type: json
+        data: |-
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "result": true
+          }
+
+docs: Sets the source to the selected source.

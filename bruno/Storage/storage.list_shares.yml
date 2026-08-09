@@ -1,0 +1,24 @@
+info:
+  name: storage.list_shares
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{baseURL}}"
+  body:
+    type: json
+    data: |-
+      {
+        "jsonrpc": "2.0",
+        "method": "storage.list_shares",
+        "params":{},
+        "id": 5
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

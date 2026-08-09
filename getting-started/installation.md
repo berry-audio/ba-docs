@@ -27,7 +27,7 @@ To avoid any complex configurations and keep the setup simple, the easiest way t
 ## Connecting to Network
 
 - After the Pi finishes booting, it will start in AP mode.
-- You should see a Wi-Fi hotspot named `berryaudio` password `goberryaudio`. Connect to this network from your device.
+- You should see a Wi-Fi hotspot named `berryaudio` password `12345678`. Connect to this network from your device.
 - Incase your connected via Ethernet, you can skip the above step and continue to the next section.
 - If everything went well, you can now access Berryaudio from your browse on http://berryaudio.local
 - Optionally you may go to Settings → Network, scan for available networks, and connect to your Wi-Fi SSID.

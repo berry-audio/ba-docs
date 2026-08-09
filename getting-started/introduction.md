@@ -8,20 +8,29 @@ Berryaudio is an open-source project, so the documentation may not always be per
 
 - Varun Gujjar
 
-## Features
+## Feature Overview
 
-- Designed for the Raspberry Pi 
-- Supports MP3, FLAC, WAV, OGG, DSD, DSF, and other formats, with detailed codec info, ID3 tag reading, and cover art extraction.
+- Designed for the Raspberry Pi
+- Plays MP3, FLAC, WAV, OGG, DSD, DSF, and other formats, with detailed codec info, ID3 tag reading, and cover art extraction.
 - Bluetooth streaming, AirPlay 2, Spotify Connect, and built-in file browser for easy library management.
+- Filter Music Library & Radio by alphabets dictionary
+- **Collection - Recently Played, Top 100, Favourites**
 - Bluetooth receiver and transmitter support (Handles automatically based on device connected)
 - Multi-room synchronized audio playback 
 - Curated list of 200+ radio stations, including major providers like BBC and SomaFM.
 - Full ID3 tag support, music scanning, and automatic artist info from TheAudioDB.com.
 - Create and manage playlists with touch-friendly drag-and-drop sorting and playback modes (Repeat, Shuffle).
 - Supports SD cards, USB HDD and SSD drives.
+- Network folder sharing from mounted drives
 - Manage Bluetooth, view system stats, and control power options (Shutdown, Reboot, Standby).
 - Manage wireless & ethernet network, Hotspot, IP configurations direclty from the interface
-- No need to install any app can be fully controlled using a responsive web interface.
+- Fully accessible using a responsive web interface.
+- Support for Line In Audio for DAC with ADC 
+- **Search and play radio stations from the Radio Browser directory** by [@FloTec508](https://github.com/FloTec508)
+- **Support for Si4703 Tuner Boards**
+- **Stream audio directly to browser making it a Music Server (Beta)**
+- **Works as Hi-Res Soundcard DAC when connected to computer or phone(Pi Zero 2W)**
+
 
 
 ## Overview:

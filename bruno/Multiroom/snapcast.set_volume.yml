@@ -1,0 +1,28 @@
+info:
+  name: snapcast.set_volume
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{baseURL}}"
+  body:
+    type: json
+    data: |-
+      {
+        "jsonrpc": "2.0",
+        "method": "snapcast.set_volume",
+        "params": {
+              "client_id":"865ED092-E95B-4E21-8561-35CBFF6AC902#0",
+              "volume":31,
+              "mute":false
+          },
+        "id": 3
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
