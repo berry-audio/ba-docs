@@ -1,0 +1,28 @@
+info:
+  name: storage.mount_shared
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{baseURL}}"
+  body:
+    type: json
+    data: |-
+      {
+          "jsonrpc": "2.0",
+          "method": "storage.mount_shared",
+          "params": {
+              "devs": [
+                   "smb://192.168.10.204/Varun Gujjar’s Public Folder"
+              ]
+          },
+          "id": 5
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

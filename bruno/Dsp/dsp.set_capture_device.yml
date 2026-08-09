@@ -1,0 +1,26 @@
+info:
+  name: dsp.set_capture_device
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseURL}}"
+  body:
+    type: json
+    data: |-
+      {
+        "jsonrpc": "2.0",
+        "method": "dsp.set_capture_device",
+        "params":{
+          "device": "hw:Loopback,1,0"
+        },
+        "id": 5
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

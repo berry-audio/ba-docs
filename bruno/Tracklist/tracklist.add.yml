@@ -1,0 +1,28 @@
+info:
+  name: tracklist.add
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseURL}}"
+  body:
+    type: json
+    data: |-
+      {
+        "jsonrpc": "2.0",
+        "method": "tracklist.add_track",
+        "params":{
+          "uris": [
+              "radio:http://playerservices.streamtheworld.com/api/livestream-redirect/2BOBAAC.aac:033d5dc1-39a9-4d06-85d9-30e17e0dfd74"
+              ]
+        },
+        "id": 5
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

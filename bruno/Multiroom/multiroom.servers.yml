@@ -1,0 +1,26 @@
+info:
+  name: multiroom.servers
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseURL}}"
+  body:
+    type: json
+    data: |-
+      {
+        "jsonrpc": "2.0",
+        "method": "multiroom.servers",
+        "params": {
+         
+        },
+        "id": 3
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

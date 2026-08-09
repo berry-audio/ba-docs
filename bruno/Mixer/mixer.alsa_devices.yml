@@ -1,0 +1,106 @@
+info:
+  name: mixer.alsa_devices
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{baseURL}}"
+  body:
+    type: json
+    data: |-
+      {
+        "jsonrpc": "2.0",
+        "method": "mixer.alsa_devices",
+        "params": {
+          "cmd": "aplay"
+        },
+        "id": 5
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: example
+    request:
+      url: "{{baseURL}}"
+      method: POST
+      body:
+        type: json
+        data: |-
+          {
+            "jsonrpc": "2.0",
+            "method": "mixer.alsa_devices",
+            "params": {
+              "cmd": "aplay"
+            },
+            "id": 5
+          }
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: content-type
+          value: application/json; charset=utf-8
+        - name: content-length
+          value: "1119"
+        - name: date
+          value: Sun, 09 Aug 2026 12:04:25 GMT
+        - name: server
+          value: Python/3.11 aiohttp/3.13.5
+      body:
+        type: json
+        data: |-
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "result": [
+              {
+                "name": "None",
+                "device": null,
+                "card": null,
+                "description": null
+              },
+              {
+                "name": "hw:CARD=UAC2Gadget,DEV=0",
+                "device": "hw:CARD=UAC2Gadget,DEV=0",
+                "card": "UAC2Gadget",
+                "description": "Direct hardware device without any conversions"
+              },
+              {
+                "name": "plughw:CARD=UAC2Gadget,DEV=0",
+                "device": "plughw:CARD=UAC2Gadget,DEV=0",
+                "card": "UAC2Gadget",
+                "description": "Hardware device with all software conversions"
+              },
+              {
+                "name": "hw:CARD=vc4hdmi,DEV=0",
+                "device": "hw:CARD=vc4hdmi,DEV=0",
+                "card": "vc4hdmi",
+                "description": "Direct hardware device without any conversions"
+              },
+              {
+                "name": "plughw:CARD=vc4hdmi,DEV=0",
+                "device": "plughw:CARD=vc4hdmi,DEV=0",
+                "card": "vc4hdmi",
+                "description": "Hardware device with all software conversions"
+              },
+              {
+                "name": "hw:CARD=sndrpihifiberry,DEV=0",
+                "device": "hw:CARD=sndrpihifiberry,DEV=0",
+                "card": "sndrpihifiberry",
+                "description": "Direct hardware device without any conversions"
+              },
+              {
+                "name": "plughw:CARD=sndrpihifiberry,DEV=0",
+                "device": "plughw:CARD=sndrpihifiberry,DEV=0",
+                "card": "sndrpihifiberry",
+                "description": "Hardware device with all software conversions"
+              }
+            ]
+          }

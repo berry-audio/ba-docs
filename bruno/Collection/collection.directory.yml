@@ -1,0 +1,28 @@
+info:
+  name: collection.directory
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{baseURL}}"
+  body:
+    type: json
+    data: |-
+      {
+        "jsonrpc": "2.0",
+        "method": "collection.directory",
+        "params":{
+          "uri":"collection:favourite",
+          "limit":1,
+          "offset":0
+        },
+        "id": 5
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

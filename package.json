@@ -2,9 +2,15 @@
   "scripts": {
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "docs:preview": "vitepress preview",
+    "docs:bruno": "tsx scripts/bruno-docs.ts"
   },
   "devDependencies": {
+    "@types/node": "^26.2.0",
+    "tsx": "^4.20.3",
     "vitepress": "^1.6.4"
+  },
+  "dependencies": {
+    "yaml": "^2.9.0"
   }
 }

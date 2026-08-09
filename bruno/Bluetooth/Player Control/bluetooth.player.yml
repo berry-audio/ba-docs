@@ -1,0 +1,23 @@
+info:
+  name: bluetooth.player
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseURL}}/mopidy/bluetooth/rpc/"
+  body:
+    type: json
+    data: |-
+      {
+        "jsonrpc": "2.0",
+        "method": "bluetooth.player",
+        "id": 3
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

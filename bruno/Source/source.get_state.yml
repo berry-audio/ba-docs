@@ -1,0 +1,73 @@
+info:
+  name: source.get_state
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{baseURL}}"
+  body:
+    type: json
+    data: |-
+      {
+        "jsonrpc": "2.0",
+        "method": "source.get",
+        "id": 3
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: example
+    request:
+      url: "{{baseURL}}"
+      method: POST
+      body:
+        type: json
+        data: |-
+          {
+            "jsonrpc": "2.0",
+            "method": "source.get",
+            "id": 3
+          }
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: content-type
+          value: application/json; charset=utf-8
+        - name: content-length
+          value: "256"
+        - name: date
+          value: Sun, 09 Aug 2026 17:13:40 GMT
+        - name: server
+          value: Python/3.11 aiohttp/3.13.5
+      body:
+        type: json
+        data: |-
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "result": {
+              "__model__": "Source",
+              "name": "Airplay",
+              "uri": "shairportsync",
+              "active": false,
+              "controls": [],
+              "state": {
+                "connected": false,
+                "user_name": null,
+                "connection_id": null,
+                "name": null,
+                "icon": null,
+                "address": null
+              }
+            }
+          }
+
+docs: Gets the selected source.

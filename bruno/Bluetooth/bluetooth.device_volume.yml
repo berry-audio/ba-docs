@@ -1,0 +1,28 @@
+info:
+  name: bluetooth.device_volume
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: "{{baseURL}}"
+  body:
+    type: json
+    data: |-
+      {
+        "jsonrpc": "2.0",
+        "method": "bluetooth.device_volume",
+        "params": {
+          "address": "14:4E:FD:88:AE:B1",
+          "left":127,
+          "right":127
+        },
+        "id": 3
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

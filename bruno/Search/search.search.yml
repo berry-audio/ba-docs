@@ -1,0 +1,26 @@
+info:
+  name: search.search
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseURL}}"
+  body:
+    type: json
+    data: |-
+      {
+        "jsonrpc": "2.0",
+        "method": "search.search",
+        "params":{
+          "query":"yoga"
+        },
+        "id": 5
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

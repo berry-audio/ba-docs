@@ -1,0 +1,28 @@
+info:
+  name: storage.add_shared
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{baseURL}}"
+  body:
+    type: json
+    data: |-
+      {
+        "jsonrpc": "2.0",
+        "method": "storage.add_shared",
+        "params":{
+          "ip": "192.168.10.204",
+          "username":"varun",
+          "password":"varun"
+        },
+        "id": 5
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

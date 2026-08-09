@@ -1,0 +1,27 @@
+info:
+  name: storage.directory
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseURL}}"
+  body:
+    type: json
+    data: |-
+      {
+          "jsonrpc": "2.0",
+          "method": "storage.directory",
+          "params": {
+              "uri": "storage"
+       
+          },
+          "id": 5
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
