@@ -18,13 +18,13 @@ Berryaudio has been tested on the following Raspberry Pi (Bookworm OS). While it
         <td>Raspberry Pi Zero</td>
         <td>CPU: BCM2835 @ 1 GHz Memory: 512 MB Wi‑Fi: None Bluetooth: None</td>
         <td><a href="https://www.raspberrypi.com/products/raspberry-pi-zero/">Link</a></td>
-        <td>-</td>
+        <td>Unsupported <a href="https://github.com/berry-audio/berryaudio/issues/7">see #7</a></td>
     </tr>
     <tr>
         <td>Raspberry Pi Zero W</td>
         <td>CPU: BCM2835 @ 1 GHz Memory: 512 MB Wi‑Fi: 802.11n Bluetooth: 4.0/BLE</td>
         <td><a href="https://www.raspberrypi.com/products/raspberry-pi-zero/">Link</a></td>
-        <td>-</td>
+        <td>Unsupported <a href="https://github.com/berry-audio/berryaudio/issues/7">see #7</a></td>
     </tr>
     <tr>
         <td>Raspberry Pi Zero 2 W</td>
@@ -36,7 +36,7 @@ Berryaudio has been tested on the following Raspberry Pi (Bookworm OS). While it
         <td>Raspberry Pi 1 Model B+</td>
         <td>CPU: BCM2835 Memory: 512 MB Wi‑Fi: None Bluetooth: None</td>
         <td><a href="https://www.raspberrypi.com/products/raspberry-pi-1-model-b-plus/">Link</a></td>
-        <td>-</td>
+        <td>Unsupported <a href="https://github.com/berry-audio/berryaudio/issues/7">see #7</a></td>
     </tr>
     <tr>
         <td>Raspberry Pi 3 Model B</td>
