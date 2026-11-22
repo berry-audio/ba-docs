@@ -1,7 +1,7 @@
 info:
-  name: playback.stop
+  name: dsp.signal_levels
   type: http
-  seq: 6
+  seq: 5
 
 http:
   method: POST
@@ -11,8 +11,8 @@ http:
     data: |-
       {
         "jsonrpc": "2.0",
-        "method": "playback.stop",
-        "id": 1
+        "method": "dsp.signal_levels",
+        "id": 5
       }
   auth: inherit
 

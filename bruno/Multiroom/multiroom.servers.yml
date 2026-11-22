@@ -12,9 +12,7 @@ http:
       {
         "jsonrpc": "2.0",
         "method": "multiroom.servers",
-        "params": {
-         
-        },
+        "params": {},
         "id": 3
       }
   auth: inherit
@@ -24,3 +22,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true

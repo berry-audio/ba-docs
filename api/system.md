@@ -26,6 +26,30 @@ API documentation for System.
 
 </ApiCollapse>
 
+### system.directory {.sr-only}
+
+<ApiCollapse heading="system.directory">
+<template #title>system.directory</template>
+
+<ApiRequest/>
+
+```json
+{
+  "jsonrpc": "2.0",
+  "method": "radio.directory",
+  "params": {
+    "uri": "radio",
+    "limit": 1,
+    "offset": 0
+  },
+  "id": 5
+}
+```
+
+<ApiResponse/>
+
+</ApiCollapse>
+
 ### system.info {.sr-only}
 
 <ApiCollapse heading="system.info">

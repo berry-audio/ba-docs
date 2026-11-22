@@ -13,6 +13,8 @@ API documentation for Source.
 
 Fetches all available sources, along with their controls and current states.
 
+<br/>
+
 <ApiRequest/>
 
 ```json
@@ -218,10 +220,10 @@ Fetches all available sources, along with their controls and current states.
 
 </ApiCollapse>
 
-### source.get_state {.sr-only}
+### source.get {.sr-only}
 
-<ApiCollapse heading="source.get_state">
-<template #title>source.get_state</template>
+<ApiCollapse heading="source.get">
+<template #title>source.get</template>
 
 Gets the selected source.
 
@@ -261,10 +263,10 @@ Gets the selected source.
 
 </ApiCollapse>
 
-### source.set_state {.sr-only}
+### source.set {.sr-only}
 
-<ApiCollapse heading="source.set_state">
-<template #title>source.set_state</template>
+<ApiCollapse heading="source.set">
+<template #title>source.set</template>
 
 Sets the source to the selected source.
 

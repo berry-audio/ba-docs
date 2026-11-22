@@ -120,6 +120,25 @@ API documentation for Playback.
 
 </ApiCollapse>
 
+### playback.playback_stop {.sr-only}
+
+<ApiCollapse heading="playback.playback_stop">
+<template #title>playback.playback_stop</template>
+
+<ApiRequest/>
+
+```json
+{
+  "jsonrpc": "2.0",
+  "method": "playback.playback_stop",
+  "id": 1
+}
+```
+
+<ApiResponse/>
+
+</ApiCollapse>
+
 ### playback.prev {.sr-only}
 
 <ApiCollapse heading="playback.prev">
@@ -153,25 +172,6 @@ API documentation for Playback.
   "params": {
     "time_position": 100
   },
-  "id": 1
-}
-```
-
-<ApiResponse/>
-
-</ApiCollapse>
-
-### playback.stop {.sr-only}
-
-<ApiCollapse heading="playback.stop">
-<template #title>playback.stop</template>
-
-<ApiRequest/>
-
-```json
-{
-  "jsonrpc": "2.0",
-  "method": "playback.stop",
   "id": 1
 }
 ```

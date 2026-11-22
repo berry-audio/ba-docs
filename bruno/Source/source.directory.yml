@@ -21,6 +21,7 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true
 
 examples:
   - name: example
@@ -238,5 +239,317 @@ examples:
               }
             ]
           }
+  - name: example
+    request:
+      url: "{{baseURL}}"
+      method: POST
+      body:
+        type: json
+        data: |-
+          {
+            "jsonrpc": "2.0",
+            "method": "source.directory",
+            "id": 3
+          }
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: content-type
+          value: application/json; charset=utf-8
+        - name: access-control-allow-origin
+          value: "*"
+        - name: access-control-allow-methods
+          value: GET, POST, OPTIONS
+        - name: access-control-allow-headers
+          value: Content-Type
+        - name: content-length
+          value: "3713"
+        - name: date
+          value: Sat, 14 Nov 2026 20:56:17 GMT
+        - name: server
+          value: Python/3.11 aiohttp/3.13.5
+      body:
+        type: json
+        data: |-
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "result": [
+              {
+                "__model__": "Source",
+                "name": "Playlists",
+                "uri": "playlist",
+                "active": false,
+                "enabled": true,
+                "index": 1,
+                "browsable": true,
+                "controls": [],
+                "state": {
+                  "connected": false,
+                  "connection_id": null,
+                  "name": null,
+                  "icon": null,
+                  "address": null
+                }
+              },
+              {
+                "__model__": "Source",
+                "name": "Collection",
+                "uri": "collection",
+                "active": false,
+                "enabled": true,
+                "index": 2,
+                "browsable": true,
+                "controls": [],
+                "state": {
+                  "connected": false,
+                  "connection_id": null,
+                  "name": null,
+                  "icon": null,
+                  "address": null
+                }
+              },
+              {
+                "__model__": "Source",
+                "name": "Library",
+                "uri": "local",
+                "active": false,
+                "enabled": true,
+                "index": 3,
+                "browsable": true,
+                "controls": [
+                  "seek",
+                  "play",
+                  "pause",
+                  "next",
+                  "previous",
+                  "repeat",
+                  "shuffle",
+                  "favourite"
+                ],
+                "state": {
+                  "connected": false,
+                  "connection_id": null,
+                  "name": null,
+                  "icon": null,
+                  "address": null
+                }
+              },
+              {
+                "__model__": "Source",
+                "name": "Storage",
+                "uri": "storage",
+                "active": false,
+                "enabled": true,
+                "index": 4,
+                "browsable": true,
+                "controls": [
+                  "seek",
+                  "play",
+                  "pause",
+                  "next",
+                  "previous",
+                  "repeat",
+                  "shuffle",
+                  "favourite"
+                ],
+                "state": {
+                  "connected": false,
+                  "connection_id": null,
+                  "name": null,
+                  "icon": null,
+                  "address": null
+                }
+              },
+              {
+                "__model__": "Source",
+                "name": "Radio",
+                "uri": "radio",
+                "active": true,
+                "enabled": true,
+                "index": 5,
+                "browsable": true,
+                "controls": [
+                  "seek",
+                  "play",
+                  "pause",
+                  "next",
+                  "previous",
+                  "repeat",
+                  "shuffle",
+                  "favourite"
+                ],
+                "state": {
+                  "connected": false,
+                  "connection_id": null,
+                  "name": null,
+                  "icon": null,
+                  "address": null
+                }
+              },
+              {
+                "__model__": "Source",
+                "name": "Spotify",
+                "uri": "spotify",
+                "active": false,
+                "enabled": true,
+                "index": 6,
+                "browsable": false,
+                "controls": [],
+                "state": {
+                  "connected": false,
+                  "connection_id": null,
+                  "name": null,
+                  "icon": null,
+                  "address": null
+                }
+              },
+              {
+                "__model__": "Source",
+                "name": "Airplay",
+                "uri": "shairportsync",
+                "active": false,
+                "enabled": true,
+                "index": 7,
+                "browsable": false,
+                "controls": [],
+                "state": {
+                  "connected": false,
+                  "connection_id": null,
+                  "name": null,
+                  "icon": null,
+                  "address": null
+                }
+              },
+              {
+                "__model__": "Source",
+                "name": "Bluetooth",
+                "uri": "bluetooth",
+                "active": false,
+                "enabled": true,
+                "index": 8,
+                "browsable": true,
+                "controls": [],
+                "state": {
+                  "connected": false,
+                  "connection_id": null,
+                  "name": null,
+                  "icon": null,
+                  "address": null
+                }
+              },
+              {
+                "__model__": "Source",
+                "name": "Tuner",
+                "uri": "tuner",
+                "active": false,
+                "enabled": true,
+                "index": 9,
+                "browsable": true,
+                "controls": [
+                  "next",
+                  "previous",
+                  "repeat",
+                  "shuffle"
+                ],
+                "state": {
+                  "connected": false,
+                  "connection_id": null,
+                  "name": null,
+                  "icon": null,
+                  "address": null
+                }
+              },
+              {
+                "__model__": "Source",
+                "name": "Line In",
+                "uri": "linein",
+                "active": false,
+                "enabled": true,
+                "index": 10,
+                "browsable": false,
+                "controls": [],
+                "state": {
+                  "connected": false,
+                  "connection_id": null,
+                  "name": null,
+                  "icon": null,
+                  "address": null
+                }
+              },
+              {
+                "__model__": "Source",
+                "name": "USB DAC",
+                "uri": "usbdac",
+                "active": false,
+                "enabled": true,
+                "index": 11,
+                "browsable": false,
+                "controls": [],
+                "state": {
+                  "connected": false,
+                  "connection_id": null,
+                  "name": null,
+                  "icon": null,
+                  "address": null
+                }
+              },
+              {
+                "__model__": "Source",
+                "name": "Multiroom",
+                "uri": "multiroom",
+                "active": false,
+                "enabled": true,
+                "index": 12,
+                "browsable": true,
+                "controls": [],
+                "state": {
+                  "connected": false,
+                  "connection_id": null,
+                  "name": null,
+                  "icon": "speaker",
+                  "address": null
+                }
+              },
+              {
+                "__model__": "Source",
+                "name": "DSP",
+                "uri": "dsp",
+                "active": false,
+                "enabled": true,
+                "index": 13,
+                "browsable": true,
+                "controls": [],
+                "state": {
+                  "connected": false,
+                  "connection_id": null,
+                  "name": null,
+                  "icon": null,
+                  "address": null
+                }
+              },
+              {
+                "__model__": "Source",
+                "name": "Settings",
+                "uri": "config",
+                "active": false,
+                "enabled": true,
+                "index": 14,
+                "browsable": true,
+                "controls": [],
+                "state": {
+                  "connected": false,
+                  "connection_id": null,
+                  "name": null,
+                  "icon": null,
+                  "address": null
+                }
+              }
+            ]
+          }
 
-docs: Fetches all available sources, along with their controls and current states.
+docs: |-
+  Fetches all available sources, along with their controls and current states.
+
+  <br/>

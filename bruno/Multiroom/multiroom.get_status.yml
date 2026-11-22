@@ -12,6 +12,9 @@ http:
       {
         "jsonrpc": "2.0",
         "method": "multiroom.get_status",
+        "params": {
+          "ip": "192.168.10.18"
+        },
         "id": 3
       }
   auth: inherit
@@ -21,3 +24,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true

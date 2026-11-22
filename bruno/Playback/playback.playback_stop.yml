@@ -1,7 +1,7 @@
 info:
-  name: dsp.set_capture_device Copy
+  name: playback.playback_stop
   type: http
-  seq: 2
+  seq: 6
 
 http:
   method: POST
@@ -11,11 +11,8 @@ http:
     data: |-
       {
         "jsonrpc": "2.0",
-        "method": "dsp.status",
-        "params":{
-          
-        },
-        "id": 5
+        "method": "playback.playback_stop",
+        "id": 1
       }
   auth: inherit
 
@@ -24,3 +21,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true

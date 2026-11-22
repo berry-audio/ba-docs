@@ -17,6 +17,9 @@ API documentation for Multiroom.
 {
   "jsonrpc": "2.0",
   "method": "multiroom.get_status",
+  "params": {
+    "ip": "192.168.10.18"
+  },
   "id": 3
 }
 ```
@@ -74,10 +77,10 @@ API documentation for Multiroom.
 ```json
 {
   "jsonrpc": "2.0",
-  "method": "snapcast.set_volume",
+  "method": "multiroom.set_volume",
   "params": {
-    "client_id": "865ED092-E95B-4E21-8561-35CBFF6AC902#0",
-    "volume": 31,
+    "client_id": "88:a2:9e:1b:0f:16",
+    "volume": 100,
     "mute": false
   },
   "id": 3
